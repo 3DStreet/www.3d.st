@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>3DStreet - Safer Streets Web Tools</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,9 +19,10 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">3DStreet</a></li>
-							<li><a href="#one">Demos</a></li>
+							<li><a href="#intro">Intro</a></li>
+							<li><a href="#one">Demo Apps</a></li>
 							<li><a href="#two">Docs</a></li>
+							<li><a href="#two-point-five">Contribute</a></li>
 							<li><a href="#three">Get in touch</a></li>
 						</ul>
 					</nav>
@@ -34,14 +35,15 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="vimeo-wrapper">
-							<iframe src="https://player.vimeo.com/video/477806809?background=1&autoplay=1&loop=1&byline=0&title=0"
+							<iframe src="https://player.vimeo.com/video/554035852?background=1&autoplay=1&loop=1&byline=0&title=0"
 									frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						 </div>
 						<div class="inner">
-							<h1>3DStreet</h1>
-							<h2>Open-source web-based tools to visualize safer streets.</h2>
+							<h1><span style="color: #00ffde">3D</span><span style="color: #fc00ff">Street</span></h1>
+							<h2>Web apps to visualize safer streets.</h2>
+							<p>3DStreet is a set of open-source web-based tools to visualize safer streets, including a <a href="github.com/kfarr/3dstreet#a-frame-component"><code>street</code> component</a> for <a href="aframe.io">A-Frame</a>, a collection of street 3D assets, and reference demo apps.</p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">See examples</a></li>
+								<li><a href="#one" class="button scrolly">See demo apps</a></li>
 							</ul>
 						</div>
 					</section>
@@ -49,83 +51,115 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="https://kfarr.github.io/3dstreet/" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Streetmix to 3D View</h2>
-									<p>Take a streetmix URL and load it in 3D with a skybox using A-Frame. Orbit controls for desktop or VR with compatible WebXR headsets.</p>
+									<h2>Streetmix to A-Frame 3D Scene</h2>
+									<p>Reference app that demonstrates how to take a URL of a <a href="streetmix.net">streetmix street</a> and load it in 3D with a skybox using A-Frame with orbit (scene rotation) controls for desktop or VR with compatible WebXR headsets. (VR - Oculus Quest supported, others not tested)</p>
 									<ul class="actions">
 										<li><a href="https://kfarr.github.io/3dstreet/" class="button">Launch demo</a></li>
+										<li><a href="https://github.com/kfarr/3dstreet/blob/main/index.html" class="button">View source</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="https://17thpreso.glitch.me/" class="image"><img src="images/3dstreet-mapbox-aframe-preso.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Game Concept - Robot Runner</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Mapbox Satellite View with A-Frame Presentation Component</h2>
+									<p>Demo combining mapbox, 3DStreet, and the <a href="https://github.com/rvdleun/aframe-presentation-component">A-Frame presentation component.</a> (Demo is desktop only, mobile map view not aligned correctly, vr not tested.)</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://17thpreso.glitch.me/" class="button primary">Launch demo</a></li>
+										<li><a href="https://glitch.com/edit/#!/17thpreso?path=index.html" class="button">View source</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="https://sunset-highway-robot.glitch.me/" class="image"><img src="images/robot-runner-sunset.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Game Proof of Concept - Robot Runner</h2>
+									<p>Demo intended to show proof of concept of "endless runner" style game with animated character using 3DStreet as background animation.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://sunset-highway-robot.glitch.me/" class="button">Launch demo</a></li>
+										<li><a href="https://glitch.com/edit/#!/sunset-highway-robot?path=index.html" class="button">View source</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="https://aframe-ped-signals.glitch.me/" class="image"><img src="images/signals-poc.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Utility Proof of Concept - Virtual Signals with Debug Clipboard</h2>
+									<p>Demo intended to show proof of concept of "signal simulator" style utility with pedestrian signals and "magic" traffic signal remote debugging clipboard.</p>
+									<ul class="actions">
+										<li><a href="https://aframe-ped-signals.glitch.me/" class="button">Launch demo</a></li>
+										<li><a href="https://glitch.com/edit/#!/aframe-ped-signals?path=index.html" class="button">View source</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 					</section>
 
+					
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>Docs and Learning Material</h2>
+							<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p> -->
 							<div class="features">
 								<section>
+									<a href="https://github.com/kfarr/3dstreet">
 									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>3DStreet GitHub Repo</h3>
+									<p>This GitHub repo is the core of the project which contains the `street` A-Frame component, all assets including 3D models, and the reference Streetmix to A-Frame application.</p>
+									</a>
 								</section>
 								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<a href="https://www.youtube.com/watch?v=WHClPDwHM1Q">
+									<span class="icon solid major fa-video"></span>
+									<h3>Live Stream recording - Intro to A-Frame and 3DStreet for total beginners</h3>
+									<p>This YouTube video is the first of a 3-part live streaming course that includes an introduction to the basics of HTML, how to make an A-Frame scene, and then how to use and configure the 3DStreet application to generate custom 3D street experiences.</p>
+									</a>
 								</section>
 								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<a href="http://bit.ly/webstreet">
+									<span class="icon solid major fa-book"></span>
+									<h3>Outline and Links to Sample Projects for Live Streams</h3>
+									<p>This doc includes links to all 3 of the streaming courses as well as an outline for each, links to resources and sample projects shown on the stream.</p>
+									</a>
 								</section>
 							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
+						</div>
+					</section>
+
+				<!-- Two point five -->
+					<section id="two-point-five" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Contributing to 3DStreet</h2>
+							<p>I welcome contributions to 3DStreet. I prefer submitting a pull request to the <a href="https://github.com/kfarr/3dstreet/">3DStreet GitHub repo</a> which includes the <code>street</code> A-Frame component and 3D assets. I am also recruiting for specific volunteer and paid contracts below.</p>
+							<div class="roles">
+								<h3>Paid Contracts (Project-based, application required)</h3>
+								<ul class="alt">
+									<li><a href="https://docs.google.com/document/d/1SjkDoJyFkzcTtRAf_tv6yjRoJ55RexTtBUI-6vJocSk/edit#">Three.js / A-Frame Instancing and Performance - Project-based Contract - Accepting proposals</a></li>
+									<li><a href="https://docs.google.com/document/d/1ooLhOQ6llEXMA-QqFedu2VasjYbgboy2XYAIgFQtl3s/edit#heading=h.pqtbsxtrxqcx">Three.js / A-Frame Advanced Street Geometry - Project-based Contract -  Accepting proposals</a></li>
+									<li>Blender 3D technical artist for new and existing models - Hourly Contract - not available yet, expected July 2021</li>
+								</ul>
+								<ul class="actions">
+									<li><a href="mailto:k@3d.st?subject=3DStreet+paid+contract+proposal&body=I'd+like+to+help+with+3DStreet+by+..." class="primary button">Submit a proposal for a paid contract</a></li>
+								</ul>
+								<h3>Available Roles - Volunteer (Through code for America)</h3>
+								<ul class="alt">
+									<li>Web Dev who wishes to learn A-Frame / three.js</li>
+									<li>User Experience Research and Design</li>
+								</ul>
+								<ul class="actions">
+									<li><a href="https://www.codeforsanfrancisco.org/" class="primary button">Attend Code for SF meetup to volunteer</a></li>
+								</ul>
+							</div>
 						</div>
 					</section>
 
@@ -133,7 +167,7 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -184,7 +218,7 @@
 										</li>
 									</ul>
 								</section>
-							</div>
+							</div> -->
 						</div>
 					</section>
 
@@ -194,7 +228,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2017-21 Kieran Farr. All rights reserved.</li><li>Website Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
