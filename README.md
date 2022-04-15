@@ -1,4 +1,4 @@
-This is the website for www.3d.st
+This is the website for www.3dstreet.org
 
 ****
 Info about the HTML template:
